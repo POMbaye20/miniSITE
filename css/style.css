@@ -4,7 +4,6 @@
 /* ma première feuille de style externe */
 
 /* des styles simples pour visualiser les div */
-
 .fondorange{
     background:orange;
 }
@@ -24,6 +23,42 @@
 /* les styles de la page */
 
 body {
+    margin: auto; /* margin c'est la marge extérieure d'un élément */
     background-color:olive;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* l'emballage de toute la page */
+#wrapper{
+    width: 1000px; 
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+/* le haut de page */
+header{
+    height: 236px; /* hauteur de l'élement */
+    border: 2px solid white;
+}
+
+/* le coté de la page */
+aside{
+    /* largeur de l'élément */
+    width: 300px;
+    float:left;
+}
+/* le contenu principal */
+#main {
+    width: 700px;
+    float:right;
+}
+/* la classe pour tout remettre dans le flux normal */
+.clear{
+    clear: both;
+}
+/* le pied de page */
+footer{
+    height: 200px;
+    border:2px solid white;
 }

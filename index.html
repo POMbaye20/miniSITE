@@ -9,31 +9,44 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <!-- début de la div principale -->
-        <div>
-         <!-- des nouveautés du HTML 5  -->
-        <!-- en tête de page ou d'une division ou d'une section-->
+        <div id="wrapper">
         <header class="fond_vert"> 
             <h1>En tête de la page ou d'une division ou d'une section</h1>
         <p>Avec un peu de texte</p>
         <p>Avec un peu de texte dans un autre paragraphe</p>
         </header>
-        <!-- la navigation de la page -->
-        <nav class="fond_rouge">
-            <h2>La navigation</h2>
-            <ul>
-                <li>Menu 01</li>
-                <li>Menu 02</li>
-                <li>Menu 03</li>
-                <li>Menu 04</li>
-            </ul>   
-        </nav>
-        <!-- du contenu textuel -->
-        <article class="fond_orange">Contenu textuel</article>
-        <!-- pour une division sur le coté de la page  -->
-        <aside class="fond_gris">Le coté de la page</aside>
+         <aside class="fond_gris"> <!-- pour une division sur le coté de la page  -->
+                <h2>Bienvenue !</h2>
+            <nav class="fond_rouge"> <!-- la navigation de la page -->
+                    <h2>La navigation</h2>
+                    <ul>
+                        <li>menu # 01</li>
+                        <li>menu # 02</li>
+                        <li>menu # 03</li>
+                        <li>menu # 04</li>
+                        <li>menu # 05</li>
+                        <li>menu # 06</li>
+                        <li>menu # 07</li>
+                        <li>menu # 08</li>
+                    </ul>   
+                </nav>
+            </aside>
+        <div id="main"><!-- contenu principal -->
+        <article class="fond_orange">
+            <h2>Titre d'un article</h2>
+            <p class="fond_gris">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus, assumenda sit neque delectus eaque fugit laudantium ipsam! Ipsam, alias temporibus. Facere, temporibus officia quis ipsum voluptatem quos. Similique, ullam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus, assumenda sit neque delectus eaque fugit laudantium ipsam! Ipsam, alias temporibus. Facere, temporibus officia quis ipsum voluptatem quos. Similique, ullam.</p>
+            <p class="fond_gris">Je <span class="fond_rouge">joue au foot!</span></p>
+            <p class="fond_gris">Je suis le meilleur </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus, assumenda sit neque delectus eaque fugit laudantium ipsam! Ipsam, alias temporibus. Facere, temporibus officia quis ipsum voluptatem quos. Similique, ullam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus, assumenda sit neque delectus eaque fugit laudantium ipsam! Ipsam, alias temporibus. Facere, temporibus officia quis ipsum voluptatem quos. Similique, ullam.</p>
+        </article>
+        </div><!-- fermeture de la div main -->
+       <!-- cette div permet de reprendre le flux normal -->
+        <div class="clear"></div>
         <!-- le pied de page -->
-            <footer class="fond_bleu">Le pied de page</footer>
-        </div>
+            <footer class="fond_bleu">
+                Le pied de page</footer>
+        </div><!-- fermeture wrapper -->
     </body>
 </html>

@@ -17,7 +17,7 @@
     background:lightblue;
 }
 .fond_gris {
-    background:lightgrey
+    background:lightgrey;
 }
 
 /* les styles de la page */
@@ -104,3 +104,28 @@ input, textarea, select{
 select {
     margin-top: 10px;
 }
+/* le tableau */
+table{
+    border-collapse: collapse; /* fusionne les bordures stylées ci après */
+}
+table, th, td{
+    border: 1px solid whitesmoke
+}
+th,td{
+    padding: 10px;
+}
+tr:hover {/* une pseudo-class :hover au passage du curseur */
+    background-color: yellowgreen;
+}
+
+caption, th, tfoot{
+    text-align: left;
+    background: orangered;
+    color :whitesmoke;
+    padding:10px;
+}
+caption{
+    caption-side: top;
+   text-transform: uppercase;
+}
+

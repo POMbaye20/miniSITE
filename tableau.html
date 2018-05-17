@@ -4,18 +4,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title> Accueil </title>
+        <title> Tableau </title>
         <!-- la feuille de style externe avbec une balise link -->
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <div id="wrapper">
-        <header> 
-            <h1><a href="tableau.html">MiniSITE de Papaoumar</a></h1>
-        </header>
-         <aside class="fond_gris"> <!-- pour une division sur le coté de la page  -->
+            <header> 
+                <h1><a href="tableau.html">MiniSITE de Papaoumar</a></h1>
+            </header>
+            <aside class="fond_gris"> <!-- pour une division sur le coté de la page  -->
                 <h1>Bienvenue !</h1>
-            <nav class="fond_rouge"> <!-- la navigation de la page -->
+                <nav class="fond_rouge"> <!-- la navigation de la page -->
                     <h2>La navigation</h2>
                     <ul>
                         <li><a href="index.html" title ="MiniSite : accueil">Accueil</a></li>
@@ -29,88 +29,74 @@
                     </ul>   
                 </nav>
             </aside>
-        <div id="main" class="fond_orange">
-       <h2>Mon premier tableau</h2>
-       <table>
-            <thead>   
-            <tr>
-                <th>Nom</th>
-                <th>Prénoms</th>
-                <th>Courriels</th>
+            <div id="main" class="fond_orange">
+                <h2>Mon premier tableau</h2>
+                <table>
+                    <caption>La liste des salariés de Pantin</caption>
+                        <!-- tr table une rangée de tableau -->
+                        <!-- th table head une cellule d'en tête de colonne -->
+                        <thead> <!-- thead la rangée en tête de colonne -->
+                            <tr>
+                                <th>Noms</th>
+                                <th>Prénoms</th>
+                                <th>Courriels</th>
+                                <th>Téléphone</th>
+                            </tr> 
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td>Noms</td>
+                                <td>Prénoms</td>
+                                <td>Courriels</td>
+                                <td>Téléphone</td>
+                            </tr>
+                        </tfoot>
+                <tbody> <!-- tbody le corps du tableau -->
+                    <tr class="fond_gris">
+                    <!-- td table data une cellule de tableau -->
+                    <td>Mbaye</td>
+                    <td>Papaoumar</td>
+                    <td>papaoumar.mbaye@lepoles.com</td>
+                    <td>06 52 31 75 40</td>
+                    </tr>
+                <tr>
+                    <td>Bon</td>
+                    <td>Jean-Marc</td>
+                    <td>jean-marc.bon@lepoles.com</td>
+                    <td>06 82 29 64 44</td>
+                </tr>
+            <tr class="fond_gris">
+                    <td>Isola</td>
+                    <td>Patrick</td>
+                    <td>patrick.isola@lepoles.com </td>
+                    <td></td>
             </tr>
-            </thead>   
-           <tr>
-                <td>Mbaye</td>
-                <td>Papaoumar</td>
-                <td>papaoumar.mbaye@lepoles.com</td>
-           </tr>
-           <tr>
-                <td>Bon</td>
-                <td>Jean-Marc</td>
-                <td>jean-marc.bon@lepoles.com</td>
-           </tr>
-           <tr>
-                <td>Isola</td>
-                <td>Patrick</td>
-                <td>patrick.isola@lepoles.com </td>
-           </tr>
-           <tr>
-                <td>Santo</td>
-                <td>Damien</td>
-                <td>damien.santo@lepoles.com</td>
-           </tr>
-           <tr>
-               <td>Aslan</td>
-               <td>Kilic</td>
-               <td>kilic.aslan@lepoles.com</td>            
-           </tr>
-           <tr>
-               <td>Benkherouf</td>
-               <td>Tarek</td>
-               <td>tarek.benkherouf@lepoles.com </td>
-           </tr>
-           <tr>
-               <td>Khan</td>
-               <td>Akbar</td>
-               <td>akbar.khan@lepoles.com</td>
-           </tr>
-           <tr>
-               <td>Poujaud-Melot</td>
-               <td>Lesly</td>
-               <td>lesly.poujaud-melot@lepoles.com</td>
-           </tr>
-           <tr>
-               <td>Baptiste</td>
-               <td>Andree</td>
-               <td>andree.baptiste@lepoles.com</td>
-           </tr>
-           <tr>
-               <td>Louchnikova</td>
-               <td>Marina</td>
-               <td>marina.louchnikova@lepoles.com</td>
-           </tr>
-           <tr>
-               <td>Yessad</td>
-               <td>Mohamed</td>
-               <td>mohamed.yessad@lepoles.com</td>
-           </tr>
-           <tr>
-               <td>Belkacem</td>
-               <td>Setti</td>
-               <td>setti.belkacem@lepoles.com</td>
-           </tr>
-           <tr>
-               <td>Domoison</td>
-               <td>Fabrice</td>
-               <td>fabrice.domoison@lepoles.com</td>
-           </tr>
-       </table>
-        </div><!-- fermeture de la div main -->
-       <!-- cette div permet de reprendre le flux normal -->
-        <div class="clear"></div>
-        <!-- le pied de page -->
+                <tr>
+                <td>Benkherouf</td>
+                <td>Tarek</td>
+                <td>tarek.benkherouf@lepoles.com </td>
+                <td></td>
+            </tr>
+            <tr class="fond_gris">
+                <td>Khan</td>
+                <td>Akbar</td>
+                <td>akbar.khan@lepoles.com</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Baptiste</td>
+                <td>Andrée</td>
+                <td>andree.baptiste@lepoles.com</td>
+                <td>06 37 05 53 47</td>
+                </tr>
+            </tbody> 
+            </table>
+                </div><!-- fermeture de la div main -->
+                <!-- cette div permet de reprendre le flux normal -->
+                <div class="clear"></div>
+                <!-- le pied de page -->
             <footer class="fond_bleu">
-                Le pied de page</footer>
+            Le pied de page</footer>
         </div><!-- fermeture wrapper -->
     </body>
 </html>

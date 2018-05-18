@@ -18,15 +18,15 @@
                 <nav class="fond_rouge"> <!-- la navigation de la page -->
                     <h2>La navigation</h2>
                     <ul>
-                        <li><a href="index.html" title ="MiniSite : accueil">Accueil</a></li>
-                        <li><a href="photos.html" title ="MiniSite : des photos">Photos </a></li>
-                        <li><a href="textes.html" title ="MiniSite : des textes">Textes</a></li>
-                        <li><a href="formulaire.html" title ="MiniSite : un formulaire">Formulaire</a></li>
-                        <li><a href="tableau.html" title ="MiniSite : un tableau">Tableau</a></li>
-                        <li><a href="#" title ="MiniSite : ">menu</a></li>
-                        <li><a href="#" title ="MiniSite : ">menu</a></li>
-                        <li><a href="#" title ="MiniSite : ">menu</a></li>
-                    </ul>   
+                            <li><a href="index.html" title ="MiniSite : accueil">Accueil</a></li>
+                            <li><a href="photos.html" title ="MiniSite : des photos">Photos </a></li>
+                            <li><a href="textes.html" title ="MiniSite : des textes">Textes</a></li>
+                            <li><a href="formulaire.html" title ="MiniSite : un formulaire">Formulaire</a></li>
+                            <li><a href="tableau.html" title ="MiniSite : un tableau">Tableau</a></li>
+                            <li><a href="mignon.html" title ="MiniSite : le mignon ">Le mignon</a></li>
+                            <li><a href="bilbo.html" title ="MiniSite :Bilbo le hobbit ">Bilbo</a></li>
+                            <li><a href="#" title ="MiniSite : ">menu</a></li>
+                        </ul>   
                 </nav>
             </aside>
             <div id="main" class="fond_orange">
@@ -91,6 +91,40 @@
                 </tr>
             </tbody> 
             </table>
+             <hr>
+             <h2>Un tableai avec des cellules fusionnées</h2>
+            <table>
+            <thead>
+            <tr>
+                <th>Mois</th>
+                <th>Dépenses oridnaires</th>
+                <th>Sorties</th>
+            </tr>    
+
+            </thead> 
+            <tbody>
+            <tr>
+                    <td>Janvier</td>
+                    <td>250 €</td>
+                    <td>10 €</td>
+                </tr>
+                <tr>
+                    <td>Février</td>
+                    <td>20 €</td>
+                    <td>10 €</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>20 €</td>
+                    <td>10 €</td>
+                </tr>
+                <tr class="fond_gris">
+                    <td colspan="3">Total : 320 €</td> <!-- pour fusionner les deux cellules -->
+                </tr>
+            </tbody>
+             </table>
+
+
                 </div><!-- fermeture de la div main -->
                 <!-- cette div permet de reprendre le flux normal -->
                 <div class="clear"></div>

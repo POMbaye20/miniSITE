@@ -24,13 +24,14 @@
 
 body {
     margin: auto; /* margin c'est la marge extérieure d'un élément */
-    background-color:olive;
+    /* background-color:olive; */
+    background: linear-gradient(purple, yellow,white);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* l'emballage de toute la page */
 #wrapper{
-    width: 1000px; 
+    width: 1200px; 
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -38,8 +39,9 @@ body {
 }
 /* le haut de page */
 header{
-    background: url(../img/panorama.jpg) center top no-repeat;
-    height: 450px; /* hauteur de l'élement */
+    /* background: url(../img/panorama.jpg) center top no-repeat; */
+    background:url(../img/panorama.jpg) center top no-repeat, linear-gradient(lightblue, whitesmoke);
+    height: 370px; /* hauteur de l'élement */
     border: 2px solid white;
 }
 
@@ -52,7 +54,7 @@ aside{
 }
 /* le contenu principal */
 #main {
-    width: 680px;
+    width: 880px;
     float:right;
     padding:10px;
 }
@@ -62,8 +64,9 @@ aside{
 }
 /* le pied de page */
 footer {
-    height: 236px;
+    height: 120px;
     border:2px solid white;
+    margin-bottom: 10px;
 }
 
 /* le formulaire sur le CSS */
@@ -124,8 +127,19 @@ caption, th, tfoot{
     color :whitesmoke;
     padding:10px;
 }
-caption{
+caption {
     caption-side: top;
    text-transform: uppercase;
 }
 
+/* différents styles de bordures */
+
+.filetgauche {/*  un trait à gauche du bloc */
+    border-left: 3px solid blue;
+}   
+.cartouche {/* un essai de bordure avec des coins arrondis */
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 20px
+    
+}

@@ -45,12 +45,57 @@ header{
     border: 2px solid white;
 }
 
+header h1 {
+    background-color: white;
+    text-transform: uppercase;
+    width: 20%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+header h1 a:hover {
+    /* text-decoration: underline; */
+    background-color: #333;
+    color: white;
+}
+
+
 /* le coté de la page */
 aside{
     /* largeur de l'élément */
     width: 280px;
     float:left;
     padding:10px;
+}
+/* les liens ne sont plus soulignés par défaut
+
+
+/* les pseudos class */
+/* quand le lien n'est pas visité */
+a{
+    text-decoration: none;
+}
+a:link{
+    color:orange;
+}
+/* quand le lien a été visité */
+a:visited{
+    color:lightseagreen;
+}
+/* au survol de la souris */
+nav a:hover{
+    color: white;
+    /* background: orange; */
+    text-decoration: underline;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* list-style-image: url('../img/globe_fleche.png');   */
 }
 /* le contenu principal */
 #main {
@@ -68,7 +113,6 @@ footer {
     border:2px solid white;
     margin-bottom: 10px;
 }
-
 /* le formulaire sur le CSS */
 
 form {
@@ -120,7 +164,6 @@ th,td{
 tr:hover {/* une pseudo-class :hover au passage du curseur */
     background-color: yellowgreen;
 }
-
 caption, th, tfoot{
     text-align: left;
     background: orangered;
@@ -131,7 +174,6 @@ caption {
     caption-side: top;
    text-transform: uppercase;
 }
-
 /* différents styles de bordures */
 
 .filetgauche {/*  un trait à gauche du bloc */
@@ -140,6 +182,13 @@ caption {
 .cartouche {/* un essai de bordure avec des coins arrondis */
     border: 2px solid black;
     border-radius: 100px;
-    padding: 20px
-    
+    padding: 20px  
+}
+/* ici pour l'astuce au survol dans la page texte */
+#survol p {
+    display: none;
+}
+
+#survol:hover p {
+    display: block;
 }

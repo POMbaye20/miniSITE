@@ -8,14 +8,27 @@
     <style>
         #conteneur {
             width: 1000px;
+            margin: 0 auto;
             background: aquamarine;
             color: blue;
-            margin: 0 auto;
+           
         }
 
         header {
             height: 200px;
             background: rosybrown;
+            border: 1px dashed #555555;
+        }
+
+        nav {
+            height: 50px;
+            background: #d1df0d;
+            border: 1px solid #000;
+        }
+
+        grandCarre {
+            float: left; 
+            border: 1px solid;
         }
 
         .div_un, .div_deux,  .div_trois, .div_quatre {
@@ -23,6 +36,7 @@
             width: 496px;
             height: 496px;
             border: 2px solid #000;
+            background-size: cover;/*  permet de couvrir tous l'espace de l'élément parent, peut avoir comme valeurs: cover, contain ou valeur en px */
         }
         .div_un {
             background: rgb(230, 28, 28);
@@ -32,6 +46,7 @@
         }
         .div_trois {
             background: rgb(75, 10, 228);
+      
         }
         .div_quatre {
             background: rgb(10, 230, 101);
@@ -75,7 +90,9 @@
         <section>
             <div class="div_un">
                 <div class="un">
-                        <div class="rt"></div>
+                        <div class="rt">
+                            <img src="img/ballondor.jpg" alt="Ballon d'or">
+                        </div>
                         <div class="rt"></div>
                         <div class="rt"></div>
                         <div class="rt"></div>
@@ -103,38 +120,22 @@
 
           
             <div class="div_deux">
-                <div class="un"></div>
-                <div class="deux"></div>
+                <div class="un">
+                    <img src="img/psglogo.jpg" alt="Paris Saint Germain">
+                    
+               
+                </div>
+                <div class="deux">
+                        <img src="img/ballondor.jpg" alt="Ballon d'or">
+                </div>
                 <div class="trois"></div>
                 <div class="quatre"></div>
                 </div>
 
             <div class="div_trois">
-                    <div class="un">
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                    </div>
-                    <div class="deux">
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                    </div>
-                    <div class="trois">
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                    </div>
-                    <div class="quatre">
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                            <div class="rt"></div>
-                    </div>
-               </div>
+                <img src="img/coupedumonde.jpg" alt="Mondial">
+            </div>
+            
                     
             <div class="div_quatre">
                 <div class="un">A</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nouveau tableau</title>
+    <style>
+
+        body {
+            background: pink;
+        }
+        table {
+            background: white;
+        }
+    table, th, td {
+        border: 1px solid #333;
+        border-collapse: collapse;
+    }
+    td, th {
+        padding: 10 px;
+        text-align: left;
+        min-width: 200px;
+    }
+
+    th {
+        /* background: lightcyan; */
+        /* color: white; */
+    }
+    tr:hover {
+        background: yellowgreen;
+    }
+    </style>
+  </head>
+<body>
+    <table border="10">
+       <tr>
+            <th>Nom : </th>
+            <td>André Bourvil</td>
+       </tr>
+       <tr>
+            <th rowspan="2">Téléphone : </th> <!-- fusion de cette td avec celle de la rangée du dessous --> 
+            <td>Passy 07 12</td>
+       </tr>
+       <tr> 
+            <td>à Camembert 78 55</td>
+       </tr>
+    </table>
+</body>
+</html>

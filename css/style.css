@@ -62,8 +62,9 @@ header h1 a:hover {
     background-color: #333;
     color: white;
 }
-
-
+.texte_droite {
+    text-align: right;
+}
 /* le coté de la page */
 aside{
     /* largeur de l'élément */
